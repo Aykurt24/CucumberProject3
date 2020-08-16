@@ -11,14 +11,14 @@ import org.testng.Assert;
 import java.util.List;
 
 
-public class ParentClass {
+public class BaseClass {
 
 //    In this class we need two thinks one is driver second one is a WebDriverWait
 
     WebDriver driver;
     WebDriverWait wait;
 
-    public ParentClass(){
+    public BaseClass(){
 
         driver = Driver.getDriver();
         wait = new WebDriverWait(driver,10);

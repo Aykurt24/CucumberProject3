@@ -9,9 +9,9 @@ import org.testng.Assert;
 
 import java.util.List;
 
-public class WebOrders extends ParentClass{
+public class WebOrdersLocators extends BaseClass {
 
-    public WebOrders () {
+    public WebOrdersLocators() {
 
         PageFactory.initElements(Driver.getDriver(),this);
     }
