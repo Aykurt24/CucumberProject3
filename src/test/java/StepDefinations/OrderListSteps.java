@@ -1,7 +1,7 @@
 package StepDefinations;
 
 import PageObjectModel.BaseClass;
-import PageObjectModel.WebOrdersLocators;
+import PageObjectModel.WebOrderListLocators;
 import Utilities.Driver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -9,9 +9,9 @@ import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginSteps extends BaseClass {
+public class OrderListSteps extends BaseClass {
 
-    WebOrdersLocators webOrders = new WebOrdersLocators();
+    WebOrderListLocators webOrders = new WebOrderListLocators();
     WebDriver driver;
 
     @Given("^Navigate to smartbearsoftware$")
