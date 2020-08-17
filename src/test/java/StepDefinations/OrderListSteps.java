@@ -41,8 +41,8 @@ public class OrderListSteps extends BaseClass {
 
     }
 
-    @Then("^Verify Number Of Items On the Oreder List$")
-    public void verifyNumberOfItemsOnTheOrederList() {
+    @Then("^Verify Number Of Items On the Order List$")
+    public void verifyNumberOfItemsOnTheOrderList() {
 
         webOrders.VerifyNumberOfItem(8);
     }

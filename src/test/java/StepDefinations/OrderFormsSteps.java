@@ -56,7 +56,7 @@ public class OrderFormsSteps extends BaseClass {
     public void navigateToViewAllOrdersPage() {
 
         orderFormLocators.findElementAndClick("viewAllOrdersButton");
-        waiting(3000);
+
 
     }
 

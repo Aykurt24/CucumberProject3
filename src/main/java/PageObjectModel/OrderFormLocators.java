@@ -65,6 +65,25 @@ public class OrderFormLocators extends BaseClass {
     @FindBy(css = "#ctl00_MainContent_fmwOrder_cardList_0")
     private WebElement cardList;
 
+    @FindBy (css = "#ctl00_MainContent_fmwOrder_rev1")
+    private WebElement invalidZip;
+
+    @FindBy (css = "#ctl00_MainContent_fmwOrder_RegularExpressionValidator2")
+    private WebElement invalidCardNumber;
+
+    @FindBy (css = "#ctl00_MainContent_fmwOrder_RegularExpressionValidator3")
+    private WebElement invalidDate;
+
+    @FindBy (css = "#ctl00_MainContent_fmwOrder_RegularExpressionValidator1")
+    private WebElement warningQuantity;
+
+    @FindBy (css = "#ctl00_MainContent_fmwOrder_CustomValidator1")
+    private WebElement warningCardType;
+
+
+
+
+
     WebElement myElement;
 
     public void findElementAndClick (String elementName){
@@ -155,7 +174,6 @@ public class OrderFormLocators extends BaseClass {
 
         }
 
-
     }
 
     public void selectCard (String option) {
@@ -164,5 +182,38 @@ public class OrderFormLocators extends BaseClass {
 
 
         }
+
+    public void VerifyerrorMessage (String elementName){
+
+        switch (elementName){
+
+            case "invalidZip":
+                myElement = invalidZip;
+                break;
+            case "invalidCardNumber":
+                myElement = invalidCardNumber;
+                break;
+            case "invalidDate":
+                myElement = invalidDate;
+                break;
+            case "warningQuantity":
+                myElement = warningQuantity;
+                break;
+            case "warningCardType":
+                myElement = warningCardType;
+                break;
+        }
+
+        if (myElement == warningQuantity){
+            ElementContainsText(myElement,"zero");
+        }else if (myElement == warningCardType){
+            ElementContainsText(myElement,"Select");
+        }else
+
+       ElementContainsText(myElement,"Invalid");
+    }
+
+
+
     }
 
