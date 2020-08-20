@@ -1,6 +1,6 @@
 Feature: Order List Functionality
 
-  @SmokeTest
+
   Scenario: Verify number of items on the order list
     Given Navigate to smartbearsoftware
     When Enter the username and password and click on login button

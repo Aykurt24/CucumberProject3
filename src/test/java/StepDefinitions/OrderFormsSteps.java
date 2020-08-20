@@ -1,4 +1,4 @@
-package StepDefinations;
+package StepDefinitions;
 
 import PageObjectModel.BaseClass;
 import PageObjectModel.OrderFormLocators;
@@ -23,11 +23,11 @@ public class OrderFormsSteps extends BaseClass {
     public void fillTheQuantityCustomerNameStreetCityStateZipCardNUmberAndExpDate(DataTable inputData) {
 
 
+
         List<List<String>> AllElementsNameAndValue= inputData.asLists(String.class);
 
 
         for(int i =0 ; i <AllElementsNameAndValue.size() ; i++){
-
 
             orderFormLocators.findElementAndKeys(AllElementsNameAndValue.get(i).get(0) ,AllElementsNameAndValue.get(i).get(1));
 

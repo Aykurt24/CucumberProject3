@@ -1,7 +1,7 @@
 Feature: Order Form Functionality
 
 
-
+  @SmokeTest
   Scenario Outline: Ordering different item
 
     Given Navigate to smartbearsoftware
@@ -25,7 +25,7 @@ Feature: Order Form Functionality
 
     Examples:
 
-      |Name   |  Quantity |  Street | City      |  State |  Zip  | Card Number | Expire Date| Options      |
+      |Name  |  Quantity |  Street | City      |  State |  Zip  | Card Number | Expire Date| Options      |
       |Dogan  |    2      |  Bernard| Pittsburgh|  NJ    |  15234| 293858590409| 08/23      |  MyMoney     |
       |Ali    |    1      |  Bernard| Pittsburgh|  NJ    |  15234| 293858590409| 08/23      |  FamilyAlbum |
       |Yakup  |    1      |  Bernard| Pittsburgh|  NJ    |  15234| 293858590409| 08/23      |  ScreenSaver |

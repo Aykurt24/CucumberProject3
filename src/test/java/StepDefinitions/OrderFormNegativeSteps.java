@@ -1,4 +1,4 @@
-package StepDefinations;
+package StepDefinitions;
 
 import PageObjectModel.BaseClass;
 import PageObjectModel.OrderFormLocators;
@@ -7,7 +7,6 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import java.util.List;

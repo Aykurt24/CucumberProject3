@@ -11,10 +11,10 @@
         <protocol>https</protocol>
 
         <!-- title of the document -->
-        <documentTitle>Basqar extend report</documentTitle>
+        <documentTitle> smartbearsoftware extend report</documentTitle>
 
         <!-- report name - displayed at top-nav -->
-        <reportName>Basqar report</reportName>
+        <reportName>smartbearsoftware report</reportName>
 
         <!-- global date format override -->  <!-- defaults to yyyy-MM-dd -->
         <dateFormat>yyyy-MM-dd</dateFormat>

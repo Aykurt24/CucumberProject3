@@ -29,8 +29,8 @@ public class RunnersWithPlugin extends AbstractTestNGCucumberTests {
     public static void afterClass(){
 
         Reporter.loadXMLConfig(new File("src/test/java/FeatureFiles/extentReport.xml"));
-        Reporter.setSystemInfo("User Name" , "group2");
-        Reporter.setSystemInfo("Application Name", "automationpractice");
+        Reporter.setSystemInfo("User Name" , "Dogan");
+        Reporter.setSystemInfo("Application Name", "smartbearsoftware");
         Reporter.setSystemInfo("Operating System Type" , System.getProperty("os.name"));
         Reporter.setSystemInfo("Environment", "QA");
         Reporter.setTestRunnerOutput("Test execution Cucumber report");
